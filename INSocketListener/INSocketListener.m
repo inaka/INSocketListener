@@ -26,7 +26,7 @@
 
 @implementation INSocketListener
 
-- (id)initWithServer:(NSString *)server port:(NSInteger)port delegate:(id<INSocketListenerDelegate>)delegate {
+- (id)initWithServer:(NSString *)server port:(NSInteger)port delegate:(id<INSocketDelegate>)delegate {
 	self = [super init];
 	if(self) {
 		self.server = server;

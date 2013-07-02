@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "INSocketListenerDelegate.h"
+#import "INSocketDelegate.h"
 
 @interface INSocketListener : NSObject
 @property (nonatomic, strong) NSString *server;
@@ -15,9 +15,9 @@
 @property (nonatomic, strong) NSString *endpointPath;
 @property (nonatomic, strong) NSDictionary *headers;
 @property (nonatomic, strong) NSString *authenticationString;
-@property (nonatomic, assign) id<INSocketListenerDelegate>delegate;
+@property (nonatomic, assign) id<INSocketDelegate>delegate;
 
-- (id)initWithServer:(NSString *)server port:(NSInteger)port delegate:(id<INSocketListenerDelegate>)delegate;
+- (id)initWithServer:(NSString *)server port:(NSInteger)port delegate:(id<INSocketDelegate>)delegate;
 - (void)connect;
 - (void)reconnect;
 - (void)disconnect;

@@ -28,7 +28,7 @@
 		EBA6A554177F765100535C1A /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6A54F177F765100535C1A /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EBA6A555177F765100535C1A /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA6A551177F765100535C1A /* Reachability.h */; };
 		EBA6A556177F765100535C1A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6A552177F765100535C1A /* Reachability.m */; };
-		EBA6A558177F767F00535C1A /* INSocketListenerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA6A557177F766F00535C1A /* INSocketListenerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBA6A558177F767F00535C1A /* INSocketDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA6A557177F766F00535C1A /* INSocketDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBA6A55D177F7B7300535C1A /* NSData+MKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA6A55B177F7B7300535C1A /* NSData+MKBase64.h */; };
 		EBA6A55E177F7B7300535C1A /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6A55C177F7B7300535C1A /* NSData+MKBase64.m */; };
 		EBE6833C177F6CEA004A9463 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE6833B177F6CEA004A9463 /* Foundation.framework */; };
@@ -64,7 +64,7 @@
 		EBA6A54F177F765100535C1A /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		EBA6A551177F765100535C1A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		EBA6A552177F765100535C1A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		EBA6A557177F766F00535C1A /* INSocketListenerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INSocketListenerDelegate.h; sourceTree = "<group>"; };
+		EBA6A557177F766F00535C1A /* INSocketDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INSocketDelegate.h; sourceTree = "<group>"; };
 		EBA6A55B177F7B7300535C1A /* NSData+MKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MKBase64.h"; sourceTree = "<group>"; };
 		EBA6A55C177F7B7300535C1A /* NSData+MKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MKBase64.m"; sourceTree = "<group>"; };
 		EBE68338177F6CEA004A9463 /* libINSocketListener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libINSocketListener.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +146,7 @@
 				EBE68340177F6CEA004A9463 /* INSocketListener.h */,
 				EBA6A54A177F758D00535C1A /* INSocketListener.m */,
 				EBE6833E177F6CEA004A9463 /* Supporting Files */,
-				EBA6A557177F766F00535C1A /* INSocketListenerDelegate.h */,
+				EBA6A557177F766F00535C1A /* INSocketDelegate.h */,
 			);
 			path = INSocketListener;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBA6A529177F6D9E00535C1A /* INSocketListener.h in Headers */,
-				EBA6A558177F767F00535C1A /* INSocketListenerDelegate.h in Headers */,
+				EBA6A558177F767F00535C1A /* INSocketDelegate.h in Headers */,
 				EBA6A553177F765100535C1A /* GCDAsyncSocket.h in Headers */,
 				EBA6A555177F765100535C1A /* Reachability.h in Headers */,
 				EBA6A55D177F7B7300535C1A /* NSData+MKBase64.h in Headers */,
@@ -384,6 +384,7 @@
 				EBA6A532177F6F7600535C1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBE68333177F6CEA004A9463 /* Build configuration list for PBXProject "INSocketListener" */ = {
 			isa = XCConfigurationList;

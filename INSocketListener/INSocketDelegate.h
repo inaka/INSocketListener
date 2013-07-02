@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol INSocketListenerDelegate <NSObject>
+@protocol INSocketDelegate <NSObject>
 - (void)handleResponse:(id)responseJSON;
 - (void)handleError:(NSError *)error;
 @end
